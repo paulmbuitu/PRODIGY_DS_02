@@ -55,6 +55,7 @@ SurvivedCount = SUM('MergeFareCleaned'[Survived])
 SurvivalRate = DIVIDE([SurvivedCount], [TotalPassengers], 0)
 MedianFare = MEDIAN('MergeFareCleaned'[CleanedFare])
 AvgAge = AVERAGE('MergeFareCleaned'[Age])
+```
 
 ---
 
@@ -64,3 +65,4 @@ AvgAge = AVERAGE('MergeFareCleaned'[Age])
 - First-class passengers survived at higher rates compared to other classes.
 - Children and families had different survival patterns compared to solo travelers.
 - Higher fares generally correlated with higher survival likelihood.
+
