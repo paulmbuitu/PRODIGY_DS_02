@@ -1,0 +1,5 @@
+TotalPassengers = COUNTROWS('MergeFareCleaned')
+SurvivedCount = SUM('MergeFareCleaned'[Survived])
+SurvivalRate = DIVIDE([SurvivedCount], [TotalPassengers], 0)
+MedianFare = MEDIAN('MergeFareCleaned'[CleanedFare])
+AvgAge = AVERAGE('MergeFareCleaned'[Age])
