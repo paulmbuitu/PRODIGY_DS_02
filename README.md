@@ -39,6 +39,8 @@ I merged and transformed the data using **Power BI** (Power Query), created new 
 ---
 
 ## 📊 Exploratory Data Analysis
+![Titanic Dashboard](1.png)
+
 The dashboard explores:
 - **Survival distribution** (Donut Chart)
 - **Survival by Passenger Class and Sex** (100% Stacked Column)
@@ -56,7 +58,6 @@ SurvivalRate = DIVIDE([SurvivedCount], [TotalPassengers], 0)
 MedianFare = MEDIAN('MergeFareCleaned'[CleanedFare])
 AvgAge = AVERAGE('MergeFareCleaned'[Age])
 ```
-
 ---
 
 ## 🚀 Insights Gained
@@ -66,3 +67,6 @@ AvgAge = AVERAGE('MergeFareCleaned'[Age])
 - Children and families had different survival patterns compared to solo travelers.
 - Higher fares generally correlated with higher survival likelihood.
 
+##  How to View
+- Download the `.pbix` file and open it in Power BI Desktop.
+- Alternatively, view the screenshots provided.
